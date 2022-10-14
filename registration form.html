@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+
+body{
+  background-image: url("https://images.theconversation.com/files/341551/original/file-20200612-153812-ws3rqu.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=754&fit=clip");
+  position: relative;
+  background-repeat: no-repeat;
+ 
+  
+}
+
+h1   {text-align: center;
+color: #000;
+		font-weight: bold;
+		font-size: 3rem;
+		animation: blinkingText 2s infinite;}
+        
+       @keyframes blinkingText{
+		0%		{ color: #F31414;}
+		25%		{ color: #F5830A;}
+		50%		{ color: #F9EE12;}
+		75%		{ color: #F605E3;}
+		100%	{ color: #F60505;}
+	}
+    
+
+form  { display: table;margin: 0 auto;
+  
+  background-color: lightblue;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  background-image: url("https://images.theconversation.com/files/341551/original/file-20200612-153812-ws3rqu.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=754&fit=clip");
+ 
+  background-position: left;
+  background-repeat: no-repeat;
+ background-size: 1300px 950px;
+  position: relative;
+}
+lab{display: table-row;}
+label{font-weight: bold;}
+
+
+.container{  
+text-align: center;
+}
+</style>
+<body>
+<div style="width:120%; max-width:1500px; min-width:480px; max-height:1100px; min-height:500px margin-left:-8px; overflow:hidden;">
+
+<h1 style="text-align: center;">Registration Form For Covid Vaccine</h1>
+
+<form>
+  	<div class= "lab">
+    <label for="fname">First Name:</label>
+    <input style="margin-left: 72px;" type="text" id="fname" name="fname"></div><br><br>
+    
+    
+	<div class= "lab">
+    <label for="lname">Last Name:</label>
+    <input style="margin-left: 74px;" type="text" id="lname" name="lname"></div><br><br>
+ 
+    
+	<div class= "lab">
+    <label for="mobilenum">Mobile Number:</label>
+    <input style="margin-left: 40px;" type="text" id="mobilenum" name="mobilenum"></div><br><br>
+    
+	<div class= "lab">
+    <label for="dob">Date of Birth:</label>
+    <input style="margin-left: 58px;" type="date" id="dob" name="dob"></div><br><br>
+    
+    
+	<div class= "lab">
+    <label for="gender">Gender:</label>
+      <input style="margin-left: 95px;" type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label></div><br><br>
+    
+    
+	<div class= "lab">
+    <label for="address">Address:</label>
+    <textarea style="margin-left: 91px;" name="comment" form="usrform"></textarea></div><br><br>
+    
+    
+	<div class= "lab">
+    <label for="pcode">Pincode:</label>
+    <input style="margin-left: 92px;" type="text" id="pcode" name="pcode"></div><br><br>
+    
+    
+	<div class= "lab">
+    <label for="country">Country:</label>
+    <select style="margin-left: 89px;" id="country" name="country">
+      <option value="india">India</option>
+      <option value="bhutan">Bhutan</option>
+      <option value="nepal">Nepal</option>
+      <option value="srilanka">Srilanka</option>
+    </select></div><br><br>
+    
+    
+    <div class= "lab">
+    <label for="Anum">Aadhar Number:</label>
+    <input style="margin-left: 33px;" type="text" id="anum" name="anum"></div><br><br>
+
+	<div class= "lab">
+    <label for="Anum">Email:</label>
+    <input style="margin-left: 104px;" type="email" id="anum" name="anum"></div><br><br>
+    
+    
+
+	
+  
+  <div class= "container">
+  <input style="font-weight: bold;" type="submit" value="Register" onclick="myFunction()">
+  <input style="font-weight: bold;" type="reset" value="Edit">
+  </div>
+  
+  <script>
+function myFunction() {
+    alert("Successfully Registered For Vaccine");
+}
+</script>
+  
+  </div>
+</form>
+
+</body>
+</html>
+
